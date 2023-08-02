@@ -1,4 +1,5 @@
 import { FunctionComponent } from 'react'
+import { Link } from 'react-router-dom';
 
 import { AppBar, Box, IconButton, Toolbar, Typography, Button } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -29,9 +30,11 @@ export const Navbar: FunctionComponent = () => {
                 </Typography>
                 <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                     {navItems.map((item) => (
-                        <Button key={item} sx={{ color: '#fff' }}>
-                            {item}
-                        </Button>
+                        <Link to={item.path}>
+                            <Button key={item.name} sx={{ color: '#fff' }}>
+                                {item.name}
+                            </Button>
+                        </Link>
                     ))}
                 </Box>
             </Toolbar>
