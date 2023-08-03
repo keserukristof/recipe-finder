@@ -1,0 +1,124 @@
+{
+    "ingredients": [
+        {
+            "id": 1,
+            "name": "Salt"
+        },
+        {
+            "id": 2,
+            "name": "Sugar"
+        },
+        {
+            "id": 3,
+            "name": "Egg"
+        },
+        {
+            "id": 4,
+            "name": "Butter"
+        },
+        {
+            "id": 5,
+            "name": "Flour"
+        },
+        {
+            "id": 6,
+            "name": "Milk"
+        },
+        {
+            "id": 7,
+            "name": "Garlic"
+        },
+        {
+            "id": 8,
+            "name": "Onion"
+        },
+        {
+            "id": 9,
+            "name": "Olive oil"
+        },
+        {
+            "id": 10,
+            "name": "Pepper"
+        },
+        {
+            "id": 11,
+            "name": "Potato"
+        },
+        {
+            "id": 12,
+            "name": "Rice"
+        },
+        {
+            "id": 13,
+            "name": "Chicken"
+        },
+        {
+            "id": 14,
+            "name": "Beef"
+        },
+        {
+            "id": 15,
+            "name": "Pork"
+        },
+        {
+            "id": 16,
+            "name": "Fish"
+        },
+        {
+            "id": 17,
+            "name": "Tomato"
+        },
+        {
+            "id": 18,
+            "name": "Carrot"
+        },
+        {
+            "id": 19,
+            "name": "Broccoli"
+        },
+        {
+            "id": 20,
+            "name": "Cheese"
+        },
+        {
+            "id": 21,
+            "name": "Bread"
+        },
+        {
+            "id": 22,
+            "name": "Pasta"
+        },
+        {
+            "id": 23,
+            "name": "Honey"
+        },
+        {
+            "id": 24,
+            "name": "Lemon"
+        },
+        {
+            "id": 25,
+            "name": "Spinach"
+        },
+        {
+            "id": 26,
+            "name": "Mushroom"
+        },
+        {
+            "id": 27,
+            "name": "Bacon"
+        },
+        {
+            "id": 28,
+            "name": "Apple"
+        },
+        {
+            "id": 29,
+            "name": "Banana"
+        },
+        {
+            "id": 30,
+            "name": "Strawberry"
+        }
+    ]
+}
