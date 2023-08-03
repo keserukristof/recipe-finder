@@ -2,13 +2,7 @@ import { FunctionComponent } from "react";
 
 import { Link } from "react-router-dom";
 
-import Box from '@mui/material/Box';
-import Divider from '@mui/material/Divider';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
-import Typography from '@mui/material/Typography';
+import { Box, Divider, List, ListItem, ListItemButton, ListItemText, Typography } from '@mui/material';
 
 import { useNavitionContext } from "../../../contexts/navigation.context";
 
