@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 
 export const AboutPage: FunctionComponent = () => {
-    return(
+    return (
         <p>ABOUT</p>
     );
 }

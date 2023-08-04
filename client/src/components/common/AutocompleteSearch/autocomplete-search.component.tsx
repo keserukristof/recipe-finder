@@ -1,5 +1,4 @@
 import { FunctionComponent } from "react";
-
 import { Autocomplete, TextField } from '@mui/material';
 
 interface AutocompleteSearchProps {
@@ -13,7 +12,7 @@ export const AutocompleteSearch: FunctionComponent<AutocompleteSearchProps> = ({
     <Autocomplete
       disablePortal
       id="autocomplete-search"
-      options={options}
+      options={options || []}
       sx={{ width: 300 }}
       onChange={(event, newValue) => onValueChange(newValue)}
       renderInput={(params) => <TextField {...params} label={label} />}

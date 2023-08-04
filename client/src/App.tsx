@@ -1,18 +1,19 @@
 import { FunctionComponent } from 'react';
 import { BrowserRouter } from "react-router-dom";
-import { Provider } from 'react-redux'
+import { ApiProvider } from '@reduxjs/toolkit/dist/query/react';
 
 import { Layout } from './components/app-shell/Layout/layout.component';
 
-import { store } from './store'
+import { apiSlice } from './features/api/api.slice';
+
 
 const App: FunctionComponent = () => {
   return (
-    <Provider store={store}>
+    <ApiProvider api={apiSlice}>
       <BrowserRouter>
         <Layout />
       </BrowserRouter>
-    </Provider>
+    </ApiProvider>
   );
 };
 
