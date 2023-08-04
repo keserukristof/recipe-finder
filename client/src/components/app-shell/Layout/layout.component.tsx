@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 import { Route, Routes } from "react-router-dom";
 
-import { Box, Toolbar, Typography, CssBaseline, Container } from "@mui/material";
+import { Box, Toolbar, CssBaseline, Container } from "@mui/material";
 
 import { Navbar } from "../Navbar/navbar.component";
 import { DrawerContainer } from "../Drawer/drawer-container.component";
@@ -19,16 +19,14 @@ export const Layout: FunctionComponent = () => {
                 <Navbar />
                 <DrawerContainer />
             </NavigationContextProvider>
-            <Box component="main" sx={{ p: 3 }}>
+            <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
                 <Toolbar />
-                <Typography>
                 <Container maxWidth="sm">
                     <Routes>
                         <Route path="/" element={<HomePage />} />
                         <Route path="/about" element={<AboutPage />} />
                     </Routes>
                 </Container>
-                </Typography>
             </Box>
         </Box>
     );
