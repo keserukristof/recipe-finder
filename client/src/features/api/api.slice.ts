@@ -1,10 +1,11 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 import { Ingredient } from "../../types/ingredients.type";
+import { SERVER_BASE_URL } from "../../constants/api.constants"
 
 export const apiSlice = createApi({
     reducerPath: 'api',
-    baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:3001" }),
+    baseQuery: fetchBaseQuery({ baseUrl: SERVER_BASE_URL }),
     endpoints: (builder) => ({
         getIngredients: builder.query<Ingredient[], void>({
             query: () => "/ingredients",
