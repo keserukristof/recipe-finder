@@ -25,8 +25,8 @@ export const Drawer: FunctionComponent = () => {
                             </ListItemButton>
                         </ListItem>
                     </Link>
-                ))}
+                ))};
             </List>
         </Box>
-    )
-}
+    );
+};
