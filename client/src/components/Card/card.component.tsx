@@ -1,25 +1,48 @@
-import { FunctionComponent } from "react";
-import { Box, Card as MuCard, CardContent, Typography, CardActions, Button } from '@mui/material';
+import { FunctionComponent, useState } from "react";
+import { Card as MuCard, CardContent, Typography, CardActions, Collapse, IconButton } from '@mui/material';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
+import { ExpandMore } from "../../styled-components/expand-more.component";
 
 
 interface CardProps {
     title: string;
-    content: JSX.Element;
+    expandedContent: JSX.Element;
 }
 
-export const Card: FunctionComponent<CardProps> = ({ title, content }) => {
+export const Card: FunctionComponent<CardProps> = ({ title, expandedContent }) => {
+    const [expanded, setExpanded] = useState(false);
+
+    const handleExpandClick = () => {
+        setExpanded(!expanded);
+    };
+
     return (
-        <Box sx={{ maxWidth: 275 }}>
-            <MuCard variant="outlined">
+        <MuCard sx={{display: 'inline-flex', flexDirection: 'column', alignItems: 'flex-start'}}>
+            <CardContent>
+                <Typography variant="h5" component="div">
+                    {title}
+                </Typography>
+            </CardContent>
+            <CardActions disableSpacing>
+                <IconButton aria-label="add to favorites">
+                    <FavoriteIcon />
+                </IconButton>
+                <ExpandMore
+                    expand={expanded}
+                    onClick={handleExpandClick}
+                    aria-expanded={expanded}
+                    aria-label="show more"
+                >
+                    <ExpandMoreIcon />
+                </ExpandMore>
+            </CardActions>
+            <Collapse in={expanded} timeout="auto" unmountOnExit>
                 <CardContent>
-                    <Typography variant="h5" component="div">
-                        {title}
-                    </Typography>
+                    {expandedContent}
                 </CardContent>
-                <CardActions>
-                    <Button size="small">Mutrition Table</Button>
-                </CardActions>
-            </MuCard>
-        </Box>
+            </Collapse>
+        </MuCard>
     );
 };

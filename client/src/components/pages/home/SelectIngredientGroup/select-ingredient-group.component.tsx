@@ -2,7 +2,7 @@ import { FunctionComponent, useState } from "react";
 import { Button, Grid } from '@mui/material';
 import { useDispatch } from 'react-redux';
 
-import StyledCenteredGridContainer from "../../../../styled-components/styled-grid";
+import StyledCenteredGridContainer from "../../../../styled-components/styled-grid.component";
 
 import { AutocompleteSearch } from "../../../AutocompleteSearch/autocomplete-search.component";
 import { useGetIngredientsQuery } from "../../../../features/api/api.slice";
