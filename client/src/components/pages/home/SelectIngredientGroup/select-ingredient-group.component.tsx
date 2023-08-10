@@ -1,37 +1,44 @@
-import { FunctionComponent, useState } from "react";
+import { FunctionComponent, useState, useEffect } from "react";
 import { Button, Grid } from '@mui/material';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 import StyledCenteredGridContainer from "../../../../styled-components/styled-grid.component";
 
+import { Ingredient } from "../../../../types/ingredients.type";
 import { AutocompleteSearch } from "../../../AutocompleteSearch/autocomplete-search.component";
 import { useGetIngredientsQuery } from "../../../../features/api/api.slice";
 import { addIngredient } from "../../../../features/ingredients/ingreditents.slice"
-import { Ingredient } from "../../../../types/ingredients.type";
+import { selectAllIngredients } from "../../../../features/ingredients/ingredient.selectors";
 
 export const SelectIngredientListGroup: FunctionComponent = () => {
-
   const dispatch = useDispatch();
-  const { data, isError, error } = useGetIngredientsQuery();
+  const { data: ingredients, isError, error } = useGetIngredientsQuery();
 
-  const [selectedValue, setSelectedValue] = useState<string | null>(null);
+  const ingredientsFromState = useSelector(selectAllIngredients);
+  
+  const [selectedIngredient, setSelectedIngredient] = useState<Ingredient | null>(null);
+  useEffect(() => {
+    console.log(ingredientsFromState);
+  })
 
-  const processFetchedIngedientsData = (ingredients: Ingredient[]) => {
+  const getAutocompleteSearchOptions = (ingredients: Ingredient[]) => {
     return ingredients ? ingredients.map(ingredient => ingredient.name) : [];
   };
 
-  const handleValueChange = (newValue: string | null) => {
-    if (newValue) {
-      setSelectedValue(newValue);
+  const handleValueChange = (ingredientName: string | null) => {
+    if (ingredientName) {
+      const foundIngredient = ingredients?.find(ingredient => ingredient.name === ingredientName);
+      setSelectedIngredient(foundIngredient || null);
     } else {
-      setSelectedValue(null);
+      setSelectedIngredient(null);
     }
   };
 
   const handleSubmit = () => {
-    if (selectedValue) {
-      dispatch(addIngredient(selectedValue));
-      setSelectedValue(null);
+    if (selectedIngredient) {
+      dispatch(addIngredient(selectedIngredient));
+      console.log(ingredientsFromState);
+      setSelectedIngredient(null);
     } else {
       console.log('Please select a value before submitting.');
     }
@@ -44,7 +51,7 @@ export const SelectIngredientListGroup: FunctionComponent = () => {
   return (
     <StyledCenteredGridContainer container>
       <Grid item sx={{ p: 3 }}>
-        <AutocompleteSearch label="Ingredient" options={processFetchedIngedientsData(data || [])} onValueChange={handleValueChange} />
+        <AutocompleteSearch label="Ingredient" options={getAutocompleteSearchOptions(ingredients || [])} onValueChange={handleValueChange} />
       </Grid>
       <Grid item sx={{ p: 3 }}>
         <Button variant="outlined" onClick={handleSubmit}>Submit</Button>
