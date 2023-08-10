@@ -1,9 +1,13 @@
 import { FunctionComponent } from "react";
-import { Card } from "../../../Card/card.component";
+
+import { ExpandableCard } from "../../../ExpandableCard/expandable-card.component";
+import { NutritientValueList } from "../NutritientValueList/nutritient-value-list.component";
 
 
 export const ManageIngredients: FunctionComponent = () => {
     return (
-        <Card title="Butter" expandedContent={<p>ASD</p>}/>
+        <>
+            <ExpandableCard title="Butter" expandedContent={<NutritientValueList fat={1} carbs={1} protein={1} />} />
+        </>
     );
 };

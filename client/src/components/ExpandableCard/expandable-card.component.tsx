@@ -6,12 +6,12 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { ExpandMore } from "../../styled-components/expand-more.component";
 
 
-interface CardProps {
+interface ExpandableCardProps {
     title: string;
     expandedContent: JSX.Element;
 }
 
-export const Card: FunctionComponent<CardProps> = ({ title, expandedContent }) => {
+export const ExpandableCard: FunctionComponent<ExpandableCardProps> = ({ title, expandedContent }) => {
     const [expanded, setExpanded] = useState(false);
 
     const handleExpandClick = () => {
