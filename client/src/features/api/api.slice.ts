@@ -19,4 +19,4 @@ export const api  = createApi({
     })
 });
 
-export const { useGetIngredientsQuery, middleware: apiMiddleware } = api;
+export const { useGetIngredientsQuery, useGetRecipesQuery, middleware: apiMiddleware } = api;
