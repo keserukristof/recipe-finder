@@ -1,4 +1,4 @@
-interface NutritionalValues {
+export interface NutritionalValues {
     protein: number;
     carbs: number;
     fat: number;
@@ -9,5 +9,5 @@ export interface Ingredient {
     id: number;
     name: string;
     nutritionalValues: NutritionalValues;
-    vegan: boolean;
+    isVegan: boolean;
 }

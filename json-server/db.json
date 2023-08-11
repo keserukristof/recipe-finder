@@ -9,7 +9,7 @@
                 "fat": 0,
                 "calories": 0
             },
-            "vegan": true
+            "isVegan": true
         },
         {
             "id": 2,
@@ -20,7 +20,7 @@
                 "fat": 0,
                 "calories": 400
             },
-            "vegan": true
+            "isVegan": true
         },
         {
             "id": 3,
@@ -31,7 +31,7 @@
                 "fat": 11,
                 "calories": 155
             },
-            "vegan": false
+            "isVegan": false
         },
         {
             "id": 4,
@@ -42,7 +42,7 @@
                 "fat": 82,
                 "calories": 742
             },
-            "vegan": false
+            "isVegan": false
         },
         {
             "id": 5,
@@ -53,7 +53,7 @@
                 "fat": 1,
                 "calories": 364
             },
-            "vegan": true
+            "isVegan": true
         },
         {
             "id": 6,
@@ -64,7 +64,7 @@
                 "fat": 3.3,
                 "calories": 49
             },
-            "vegan": false
+            "isVegan": false
         },
         {
             "id": 7,
@@ -75,7 +75,7 @@
                 "fat": 0.5,
                 "calories": 149
             },
-            "vegan": true
+            "isVegan": true
         },
         {
             "id": 8,
@@ -86,7 +86,7 @@
                 "fat": 0.1,
                 "calories": 40
             },
-            "vegan": true
+            "isVegan": true
         },
         {
             "id": 9,
@@ -97,7 +97,7 @@
                 "fat": 100,
                 "calories": 900
             },
-            "vegan": true
+            "isVegan": true
         },
         {
             "id": 10,
@@ -108,7 +108,7 @@
                 "fat": 0.3,
                 "calories": 41
             },
-            "vegan": true
+            "isVegan": true
         },
         {
             "id": 11,
@@ -119,7 +119,7 @@
                 "fat": 0.1,
                 "calories": 77
             },
-            "vegan": true
+            "isVegan": true
         },
         {
             "id": 12,
@@ -130,7 +130,7 @@
                 "fat": 0.3,
                 "calories": 130
             },
-            "vegan": true
+            "isVegan": true
         },
         {
             "id": 13,
@@ -141,7 +141,7 @@
                 "fat": 3.6,
                 "calories": 165
             },
-            "vegan": false
+            "isVegan": false
         },
         {
             "id": 14,
@@ -152,7 +152,7 @@
                 "fat": 17,
                 "calories": 250
             },
-            "vegan": false
+            "isVegan": false
         },
         {
             "id": 15,
@@ -163,7 +163,7 @@
                 "fat": 20.8,
                 "calories": 297
             },
-            "vegan": false
+            "isVegan": false
         },
         {
             "id": 16,
@@ -174,7 +174,7 @@
                 "fat": 13.6,
                 "calories": 206
             },
-            "vegan": false
+            "isVegan": false
         },
         {
             "id": 17,
@@ -185,7 +185,7 @@
                 "fat": 0.2,
                 "calories": 18
             },
-            "vegan": true
+            "isVegan": true
         },
         {
             "id": 18,
@@ -196,7 +196,7 @@
                 "fat": 0.2,
                 "calories": 41
             },
-            "vegan": true
+            "isVegan": true
         },
         {
             "id": 19,
@@ -207,7 +207,7 @@
                 "fat": 0.4,
                 "calories": 55
             },
-            "vegan": true
+            "isVegan": true
         },
         {
             "id": 20,
@@ -218,7 +218,7 @@
                 "fat": 33,
                 "calories": 403
             },
-            "vegan": false
+            "isVegan": false
         },
         {
             "id": 21,
@@ -229,7 +229,7 @@
                 "fat": 3.2,
                 "calories": 265
             },
-            "vegan": true
+            "isVegan": true
         },
         {
             "id": 22,
@@ -240,7 +240,7 @@
                 "fat": 1.5,
                 "calories": 352
             },
-            "vegan": true
+            "isVegan": true
         },
         {
             "id": 23,
@@ -251,7 +251,7 @@
                 "fat": 0,
                 "calories": 304
             },
-            "vegan": false
+            "isVegan": false
         },
         {
             "id": 24,
@@ -262,7 +262,7 @@
                 "fat": 0.3,
                 "calories": 29
             },
-            "vegan": true
+            "isVegan": true
         },
         {
             "id": 25,
@@ -273,7 +273,7 @@
                 "fat": 0.4,
                 "calories": 23
             },
-            "vegan": true
+            "isVegan": true
         },
         {
             "id": 26,
@@ -284,7 +284,7 @@
                 "fat": 0.3,
                 "calories": 22
             },
-            "vegan": true
+            "isVegan": true
         },
         {
             "id": 27,
@@ -295,7 +295,7 @@
                 "fat": 42,
                 "calories": 541
             },
-            "vegan": false
+            "isVegan": false
         },
         {
             "id": 28,
@@ -306,7 +306,7 @@
                 "fat": 0.4,
                 "calories": 52
             },
-            "vegan": true
+            "isVegan": true
         },
         {
             "id": 29,
@@ -317,7 +317,7 @@
                 "fat": 0.3,
                 "calories": 96
             },
-            "vegan": true
+            "isVegan": true
         },
         {
             "id": 30,
@@ -328,7 +328,7 @@
                 "fat": 0.3,
                 "calories": 32
             },
-            "vegan": true
+            "isVegan": true
         }
     ]
 }
