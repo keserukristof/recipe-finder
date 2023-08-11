@@ -13,9 +13,9 @@ interface AutocompleteSearchProps {
 export const AutocompleteSearch: FunctionComponent<AutocompleteSearchProps> = ({
   options, 
   label, 
-  onValueChange, 
   inputValue,
   selectedValue,
+  onValueChange, 
   onInputChange
 }) => {
   return (
