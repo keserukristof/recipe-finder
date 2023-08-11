@@ -7,6 +7,7 @@ import { Navbar } from "../Navbar/navbar.component";
 import { DrawerContainer } from "../Drawer/drawer-container.component";
 import { HomePage } from "../../pages/home/HomePage/home-page.component";
 import { AboutPage } from "../../pages/about/AboutPage/about-page.component";
+import { RecipesPage } from "../../pages/recipes/RecipesPage/recipes-page.component"
 
 import { NavigationContextProvider } from "../../../providers/navigation.context.provider"
 
@@ -25,6 +26,7 @@ export const Layout: FunctionComponent = () => {
                     <Routes>
                         <Route path="/" element={<HomePage />} />
                         <Route path="/about" element={<AboutPage />} />
+                        <Route path="/recipes" element={<RecipesPage />} />
                     </Routes>
                 </Container>
             </Box>

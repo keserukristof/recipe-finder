@@ -8,7 +8,7 @@ interface NavigationContextProviderProps {
 }
 
 export const NavigationContextProvider: FunctionComponent<NavigationContextProviderProps> = ({ children }) => {
-    const navItems = [{ name: 'Home', path: "/" }, { name: 'About', path: "/about" }];
+    const navItems = [{ name: 'Home', path: "/" }, { name: 'Recipes', path: "/recipes" } ,{ name: 'About', path: "/about" }];
     const [mobileOpen, setMobileOpen] = useState(false);
 
     const handleDrawerToggle = () => {
