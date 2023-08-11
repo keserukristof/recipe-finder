@@ -2,20 +2,33 @@ import { FunctionComponent } from "react";
 import { Autocomplete, TextField } from '@mui/material';
 
 interface AutocompleteSearchProps {
-  options: string[];
   label: string;
+  options: string[];
+  inputValue: string;
+  selectedValue: string | null;
   onValueChange: (newValue: string | null) => void;
+  onInputChange: (newInputValue: string) => void;
 }
 
-export const AutocompleteSearch: FunctionComponent<AutocompleteSearchProps> = ({ options, label, onValueChange }) => {
+export const AutocompleteSearch: FunctionComponent<AutocompleteSearchProps> = ({
+  options, 
+  label, 
+  onValueChange, 
+  inputValue,
+  selectedValue,
+  onInputChange
+}) => {
   return (
     <Autocomplete
       disablePortal
       id="autocomplete-search"
-      options={options || []}
       sx={{ width: 300 }}
-      onChange={(event, newValue) => onValueChange(newValue)}
       renderInput={(params) => <TextField {...params} label={label} />}
+      options={options || []}
+      inputValue={inputValue}
+      value={selectedValue}
+      onChange={(event, newValue) => onValueChange(newValue)}
+      onInputChange={(event, newInputValue) => onInputChange(newInputValue)}
     />
   );
 }

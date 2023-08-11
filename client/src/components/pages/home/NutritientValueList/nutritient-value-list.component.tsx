@@ -1,17 +1,21 @@
 import { FunctionComponent } from "react";
+import { List, ListItem } from "@mui/material";
+
+import { NutritionalValues } from "../../../../types/ingredients.type";
+
 
 interface NutritientValueListProps {
-    protein: number;
-    carbs: number;
-    fat: number;
-};
+    nutritionalValues: NutritionalValues;
+}
 
-export const NutritientValueList: FunctionComponent<NutritientValueListProps> = ({protein, carbs, fat}) => {
+export const NutritientValueList: FunctionComponent<NutritientValueListProps> = ({ nutritionalValues }) => {
+    const { calories, protein, carbs, fat } = nutritionalValues;
     return (
-        <ul>
-            <li>Protein: {protein}</li>
-            <li>Carbs: {carbs}</li>
-            <li>Fat: {fat}</li>
-        </ul>
+        <List>
+            <ListItem>Calories: {calories}</ListItem>
+            <ListItem>Protein: {protein}</ListItem>
+            <ListItem>Carbs: {carbs}</ListItem>
+            <ListItem>Fat: {fat}</ListItem>
+        </List>
     );
 };

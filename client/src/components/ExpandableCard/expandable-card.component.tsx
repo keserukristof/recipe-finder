@@ -9,9 +9,12 @@ import { ExpandMore } from "../../styled-components/expand-more.component";
 interface ExpandableCardProps {
     title: string;
     expandedContent: JSX.Element;
+    minWidth: string;
+    isIcon?: boolean;
+    icon?: JSX.Element;
 }
 
-export const ExpandableCard: FunctionComponent<ExpandableCardProps> = ({ title, expandedContent }) => {
+export const ExpandableCard: FunctionComponent<ExpandableCardProps> = ({ title, expandedContent, isIcon, icon, minWidth }) => {
     const [expanded, setExpanded] = useState(false);
 
     const handleExpandClick = () => {
@@ -19,10 +22,10 @@ export const ExpandableCard: FunctionComponent<ExpandableCardProps> = ({ title, 
     };
 
     return (
-        <MuCard sx={{display: 'inline-flex', flexDirection: 'column', alignItems: 'flex-start'}}>
+        <MuCard sx={{display: 'inline-flex', flexDirection: 'column', alignItems: 'flex-start', minWidth: minWidth}}>
             <CardContent>
                 <Typography variant="h5" component="div">
-                    {title}
+                    {title} {isIcon ? icon : ''}
                 </Typography>
             </CardContent>
             <CardActions disableSpacing>

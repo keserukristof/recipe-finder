@@ -8,7 +8,10 @@ const ingredientsSlice = createSlice({
     initialState,
     reducers: {
         addIngredient: (state, action: PayloadAction<Ingredient>) => {
-            state.push(action.payload);
+            const ingredientExists = state.some(ingredient => ingredient.id === action.payload.id);
+            if (!ingredientExists) {
+                state.push(action.payload);
+            }
         },
         removeIngredient: (state, action: PayloadAction<number>) => {
             return state.filter(ingredient => ingredient.id !== action.payload);
