@@ -330,5 +330,103 @@
             },
             "isVegan": true
         }
+    ],
+    "recipes": [
+        {
+            "id": 1,
+            "name": "Classic Pancakes",
+            "instructions": [
+                "In a large mixing bowl, whisk together the Flour, Sugar, and Salt.",
+                "In another bowl, beat the Egg and mix in the Milk and melted Butter.",
+                "Pour the wet ingredients into the dry ingredients and mix until just combined. Be careful not to overmix.",
+                "Preheat a skillet over medium heat and lightly grease.",
+                "Pour 1/4 cup batter for each pancake onto the skillet.",
+                "Cook until bubbles appear on the surface. Flip and cook until golden brown on the other side."
+            ],
+            "ingredients": [
+                {"id": 5, "amount": "1 1/2 cups"},
+                {"id": 2, "amount": "3 1/2 tsp"},
+                {"id": 6, "amount": "1 1/4 cups"},
+                {"id": 3, "amount": "1"},
+                {"id": 4, "amount": "3 tbsp"},
+                {"id": 1, "amount": "1/4 tsp"}
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Garlic Butter Sauteed Onions",
+            "instructions": [
+                "In a skillet, melt the Butter over medium heat.",
+                "Add the minced Garlic and sauté until fragrant.",
+                "Add the sliced Onions to the skillet and sprinkle with Salt and Sugar.",
+                "Sauté the Onions until they are translucent and slightly caramelized.",
+                "Remove from heat and serve as a side dish or topping."
+            ],
+            "ingredients": [
+                {"id": 8, "amount": "1"},
+                {"id": 7, "amount": "2 cloves"},
+                {"id": 4, "amount": "2 tbsp"},
+                {"id": 1, "amount": "1/4 tsp"},
+                {"id": 2, "amount": "1/4 tsp"}
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Basic Sugar Cookies",
+            "instructions": [
+                "Preheat the oven to 375°F (190°C).",
+                "In a bowl, cream together the Butter and Sugar until smooth.",
+                "Beat in the Egg.",
+                "Gradually blend in the Flour to form a smooth dough.",
+                "Roll out the dough and cut into desired shapes using cookie cutters.",
+                "Place cookies on a baking sheet and bake for 8-10 minutes or until golden.",
+                "Remove from oven and let cool on a wire rack."
+            ],
+            "ingredients": [
+                {"id": 4, "amount": "1 cup"},
+                {"id": 2, "amount": "1 1/4 cups"},
+                {"id": 3, "amount": "1"},
+                {"id": 5, "amount": "2 3/4 cups"}
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Creamy Garlic Pasta",
+            "instructions": [
+                "Cook pasta according to package instructions. Drain and set aside.",
+                "In a pan, melt Butter over medium heat.",
+                "Add minced Garlic and sauté until fragrant.",
+                "Add Milk and bring to a low simmer.",
+                "Stir in Flour gradually to thicken the sauce.",
+                "Season with Salt and combine the sauce with the cooked pasta.",
+                "Serve hot and garnish with parsley if desired."
+            ],
+            "ingredients": [
+                {"id": 7, "amount": "3 cloves"},
+                {"id": 4, "amount": "2 tbsp"},
+                {"id": 6, "amount": "1 cup"},
+                {"id": 5, "amount": "1 tbsp"},
+                {"id": 1, "amount": "1/2 tsp"}
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Onion Omelette",
+            "instructions": [
+                "Whisk the Egg in a bowl until frothy.",
+                "Add chopped Onions to the egg mixture.",
+                "Season with Salt.",
+                "In a pan, melt Butter over medium heat.",
+                "Pour in the egg mixture and cook until set.",
+                "Flip the omelette and cook the other side.",
+                "Serve hot with toast or salad."
+            ],
+            "ingredients": [
+                {"id": 3, "amount": "2"},
+                {"id": 8, "amount": "1/4 cup, chopped"},
+                {"id": 4, "amount": "1 tbsp"},
+                {"id": 1, "amount": "1/4 tsp"}
+            ]
+        }
     ]
 }
