@@ -21,7 +21,7 @@ export const Layout: FunctionComponent = () => {
             </NavigationContextProvider>
             <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
                 <Toolbar />
-                <Container maxWidth="sm">
+                <Container maxWidth="md">
                     <Routes>
                         <Route path="/" element={<HomePage />} />
                         <Route path="/about" element={<AboutPage />} />
