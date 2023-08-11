@@ -4,7 +4,7 @@ import { Ingredient } from "../../types/ingredients.type";
 import { Recipe } from "../../types/recipe.type"
 import { SERVER_BASE_URL } from "../../constants/api.constants"
 
-export const ingredientsApi  = createApi({
+export const api  = createApi({
     reducerPath: 'api',
     baseQuery: fetchBaseQuery({ baseUrl: SERVER_BASE_URL }),
     endpoints: (builder) => ({
@@ -19,4 +19,4 @@ export const ingredientsApi  = createApi({
     })
 });
 
-export const { useGetIngredientsQuery, middleware: ingredientsApiMiddleware } = ingredientsApi;
+export const { useGetIngredientsQuery, middleware: apiMiddleware } = api;

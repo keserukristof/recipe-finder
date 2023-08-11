@@ -1,13 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit';
 import ingredientsReducer from './features/ingredients/ingreditents.slice';
-import { ingredientsApiMiddleware, ingredientsApi } from "./features/api/api.slice"
+import { apiMiddleware, api } from "./features/api/api.slice"
 
 export const store = configureStore({
     reducer: {
         ingredients: ingredientsReducer,
-        [ingredientsApi.reducerPath]: ingredientsApi.reducer,
+        [api.reducerPath]: api.reducer,
     },
-    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(ingredientsApiMiddleware),
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(apiMiddleware),
 });
 
 export type RootState = ReturnType<typeof store.getState>;

@@ -5,12 +5,12 @@ import { Provider } from 'react-redux'
 
 import { store } from './store';
 import { Layout } from './components/app-shell/Layout/layout.component';
-import { ingredientsApi  } from './features/api/api.slice';
+import { api  } from './features/api/api.slice';
 
 
 const App: FunctionComponent = () => {
   return (
-    <ApiProvider api={ingredientsApi}>
+    <ApiProvider api={api}>
       <Provider store={store}>
         <BrowserRouter>
           <Layout />
