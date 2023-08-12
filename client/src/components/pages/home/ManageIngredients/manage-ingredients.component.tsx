@@ -3,8 +3,7 @@ import { useSelector } from "react-redux";
 
 import { Grid } from "@mui/material";
 
-
-import { ExpandableCard } from "../../../ExpandableCard/expandable-card.component";
+import { ExpandableCard } from "../../../cards/ExpandableCard/expandable-card.component";
 import { NutritientValueList } from "../NutritientValueList/nutritient-value-list.component";
 import { selectAllIngredients } from "../../../../features/ingredients/ingredient.selectors";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -19,7 +18,7 @@ export const ManageIngredients: FunctionComponent = () => {
             {ingredientsFromState.map(ingredient => {
                 const { name, nutritionalValues, isVegan } = ingredient;
                 return (
-                    <Grid item >
+                    <Grid item>
                         <ExpandableCard title={name} isIcon={isVegan} minWidth="200px" icon={<FontAwesomeIcon icon={faLeaf} />} expandedContent={<NutritientValueList nutritionalValues={nutritionalValues} />} />
                     </Grid>
                 );
