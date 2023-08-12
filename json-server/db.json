@@ -335,6 +335,7 @@
         {
             "id": 1,
             "name": "Classic Pancakes",
+            "description": "A fluffy and delightful morning treat made using a mix of basic ingredients like flour, milk, and egg. Perfect for breakfast, serve with your favorite syrup or fruits.",
             "instructions": [
                 "In a large mixing bowl, whisk together the Flour, Sugar, and Salt.",
                 "In another bowl, beat the Egg and mix in the Milk and melted Butter.",
@@ -344,17 +345,36 @@
                 "Cook until bubbles appear on the surface. Flip and cook until golden brown on the other side."
             ],
             "ingredients": [
-                {"id": 5, "amount": "1 1/2 cups"},
-                {"id": 2, "amount": "3 1/2 tsp"},
-                {"id": 6, "amount": "1 1/4 cups"},
-                {"id": 3, "amount": "1"},
-                {"id": 4, "amount": "3 tbsp"},
-                {"id": 1, "amount": "1/4 tsp"}
+                {
+                    "id": 5,
+                    "amount": "1 1/2 cups"
+                },
+                {
+                    "id": 2,
+                    "amount": "3 1/2 tsp"
+                },
+                {
+                    "id": 6,
+                    "amount": "1 1/4 cups"
+                },
+                {
+                    "id": 3,
+                    "amount": "1"
+                },
+                {
+                    "id": 4,
+                    "amount": "3 tbsp"
+                },
+                {
+                    "id": 1,
+                    "amount": "1/4 tsp"
+                }
             ]
         },
         {
             "id": 2,
             "name": "Garlic Butter Sauteed Onions",
+            "description": "A savory side dish that brings out the sweetness of onions, combined with the aroma of garlic and the richness of butter. Great as a topping for steaks or burgers.",
             "instructions": [
                 "In a skillet, melt the Butter over medium heat.",
                 "Add the minced Garlic and sauté until fragrant.",
@@ -363,16 +383,32 @@
                 "Remove from heat and serve as a side dish or topping."
             ],
             "ingredients": [
-                {"id": 8, "amount": "1"},
-                {"id": 7, "amount": "2 cloves"},
-                {"id": 4, "amount": "2 tbsp"},
-                {"id": 1, "amount": "1/4 tsp"},
-                {"id": 2, "amount": "1/4 tsp"}
+                {
+                    "id": 8,
+                    "amount": "1"
+                },
+                {
+                    "id": 7,
+                    "amount": "2 cloves"
+                },
+                {
+                    "id": 4,
+                    "amount": "2 tbsp"
+                },
+                {
+                    "id": 1,
+                    "amount": "1/4 tsp"
+                },
+                {
+                    "id": 2,
+                    "amount": "1/4 tsp"
+                }
             ]
         },
         {
             "id": 3,
             "name": "Basic Sugar Cookies",
+            "description": "Sweet and buttery cookies that melt in your mouth. Easy to make and perfect for any occasion. Can be decorated or eaten as-is.",
             "instructions": [
                 "Preheat the oven to 375°F (190°C).",
                 "In a bowl, cream together the Butter and Sugar until smooth.",
@@ -383,15 +419,28 @@
                 "Remove from oven and let cool on a wire rack."
             ],
             "ingredients": [
-                {"id": 4, "amount": "1 cup"},
-                {"id": 2, "amount": "1 1/4 cups"},
-                {"id": 3, "amount": "1"},
-                {"id": 5, "amount": "2 3/4 cups"}
+                {
+                    "id": 4,
+                    "amount": "1 cup"
+                },
+                {
+                    "id": 2,
+                    "amount": "1 1/4 cups"
+                },
+                {
+                    "id": 3,
+                    "amount": "1"
+                },
+                {
+                    "id": 5,
+                    "amount": "2 3/4 cups"
+                }
             ]
         },
         {
             "id": 4,
             "name": "Creamy Garlic Pasta",
+            "description": "A rich and creamy garlic-infused pasta dish that's simple to prepare. The butter and milk create a luscious sauce that clings to every strand of pasta.",
             "instructions": [
                 "Cook pasta according to package instructions. Drain and set aside.",
                 "In a pan, melt Butter over medium heat.",
@@ -402,16 +451,32 @@
                 "Serve hot and garnish with parsley if desired."
             ],
             "ingredients": [
-                {"id": 7, "amount": "3 cloves"},
-                {"id": 4, "amount": "2 tbsp"},
-                {"id": 6, "amount": "1 cup"},
-                {"id": 5, "amount": "1 tbsp"},
-                {"id": 1, "amount": "1/2 tsp"}
+                {
+                    "id": 7,
+                    "amount": "3 cloves"
+                },
+                {
+                    "id": 4,
+                    "amount": "2 tbsp"
+                },
+                {
+                    "id": 6,
+                    "amount": "1 cup"
+                },
+                {
+                    "id": 5,
+                    "amount": "1 tbsp"
+                },
+                {
+                    "id": 1,
+                    "amount": "1/2 tsp"
+                }
             ]
         },
         {
             "id": 5,
             "name": "Onion Omelette",
+            "description": "A simple yet flavorful breakfast dish that combines the texture of eggs with the crunch and sweetness of onions. Seasoned lightly with salt, it's a quick and satisfying meal.",
             "instructions": [
                 "Whisk the Egg in a bowl until frothy.",
                 "Add chopped Onions to the egg mixture.",
@@ -422,10 +487,22 @@
                 "Serve hot with toast or salad."
             ],
             "ingredients": [
-                {"id": 3, "amount": "2"},
-                {"id": 8, "amount": "1/4 cup, chopped"},
-                {"id": 4, "amount": "1 tbsp"},
-                {"id": 1, "amount": "1/4 tsp"}
+                {
+                    "id": 3,
+                    "amount": "2"
+                },
+                {
+                    "id": 8,
+                    "amount": "1/4 cup, chopped"
+                },
+                {
+                    "id": 4,
+                    "amount": "1 tbsp"
+                },
+                {
+                    "id": 1,
+                    "amount": "1/4 tsp"
+                }
             ]
         }
     ]
