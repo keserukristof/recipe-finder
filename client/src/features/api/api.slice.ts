@@ -12,11 +12,17 @@ export const api  = createApi({
             query: () => "/ingredients",
             transformResponse: (response: Ingredient[]) => response.sort((a, b) => a.name.localeCompare(b.name)),
         }),
+        getIngredientById: builder.query<Recipe, number>({
+            query: (id) => `/ingredients/${id}`,
+        }),
         getRecipes: builder.query<Recipe[], void>({
             query: () => "/recipes",
             transformResponse: (response: Recipe[]) => response.sort((a, b) => a.name.localeCompare(b.name)),
         }),
+        getRecipeById: builder.query<Recipe, number>({
+            query: (id) => `/recipes/${id}`,
+        }),
     })
 });
 
-export const { useGetIngredientsQuery, useGetRecipesQuery, middleware: apiMiddleware } = api;
+export const { useGetIngredientsQuery, useGetIngredientByIdQuery, useGetRecipesQuery, useGetRecipeByIdQuery, middleware: apiMiddleware } = api;

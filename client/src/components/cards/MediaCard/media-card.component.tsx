@@ -1,6 +1,8 @@
 import { FunctionComponent } from "react";
+import { Link } from "react-router-dom";
 import { Card as MuCard, CardContent, Typography, CardActions, CardMedia, Button } from '@mui/material';
 
+import "./media-card.css"
 import foodImage from "../../../static/images/food.jpg"
 
 
@@ -9,9 +11,10 @@ interface MediaCardProps {
     title: string;
     description: string;
     buttonLabel: string;
+    linkPath: string;
 }
 
-export const MediaCard: FunctionComponent<MediaCardProps> = ({ id, title, description, buttonLabel }) => {
+export const MediaCard: FunctionComponent<MediaCardProps> = ({ id, title, description, buttonLabel, linkPath }) => {
     return (
         <MuCard sx={{ maxWidth: 250 }}>
             <CardMedia
@@ -25,9 +28,12 @@ export const MediaCard: FunctionComponent<MediaCardProps> = ({ id, title, descri
                 <Typography variant="body2" color="text.secondary">
                     {description}
                 </Typography>
+                <hr className="media-card-separator"/>
             </CardContent>
             <CardActions>
-                <Button size="small">{buttonLabel}</Button>
+                <Link to={`/${linkPath}/${id}`}>
+                    <Button size="small">{buttonLabel}</Button>
+                </Link>
             </CardActions>
         </MuCard>
     );

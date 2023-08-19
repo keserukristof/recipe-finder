@@ -14,7 +14,13 @@ export const RecipesList: FunctionComponent = () => {
             {recipes?.map(recipe => {
                 const { id, name, description } = recipe;
                 return (<Grid item>
-                 <MediaCard id={id} title={name} description={description} buttonLabel="Learn More"/>
+                    <MediaCard
+                        id={id}
+                        title={name}
+                        description={description}
+                        buttonLabel="Learn More"
+                        linkPath="recipes"
+                    />
                 </Grid>);
             })}
         </Grid>
