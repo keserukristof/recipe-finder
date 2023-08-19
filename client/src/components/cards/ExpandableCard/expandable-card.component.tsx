@@ -22,7 +22,7 @@ export const ExpandableCard: FunctionComponent<ExpandableCardProps> = ({ title, 
     };
 
     return (
-        <MuCard sx={{display: 'inline-flex', flexDirection: 'column', alignItems: 'flex-start'}}>
+        <MuCard sx={{display: 'inline-flex', flexDirection: 'column', alignItems: 'flex-start', minWidth: '170px'}}>
             <CardContent>
                 <Typography variant="h5" component="div">
                     {title} {isIcon ? icon : ''}
