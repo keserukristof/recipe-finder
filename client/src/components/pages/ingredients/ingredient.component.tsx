@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
 
-import { useIngredientName } from "../../../../hooks/api/ingredients.hooks";
+import { useIngredientName } from "../../../hooks/api/ingredients.hooks";
 
 interface IngredientProps {
     id: number;

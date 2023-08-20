@@ -4,7 +4,7 @@ import { ApiProvider } from '@reduxjs/toolkit/dist/query/react';
 import { Provider } from 'react-redux'
 
 import { store } from './store';
-import { Layout } from './components/app-shell/Layout/layout.component';
+import { Layout } from './components/app-shell/layout.component';
 import { api  } from './features/api/api.slice';
 
 

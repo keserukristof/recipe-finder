@@ -3,9 +3,9 @@ import { useSelector } from "react-redux";
 
 import { Grid } from "@mui/material";
 
-import { ExpandableCard } from "../../../cards/ExpandableCard/expandable-card.component";
-import { NutritientValueList } from "../NutritientValueList/nutritient-value-list.component";
-import { selectAllIngredients } from "../../../../features/ingredients/ingredient.selectors";
+import { ExpandableCard } from "../../cards/ExpandableCard/expandable-card.component";
+import { NutritientValueList } from "./nutritient-value-list.component";
+import { selectAllIngredients } from "../../../features/ingredients/ingredient.selectors";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLeaf } from "@fortawesome/free-solid-svg-icons";
 

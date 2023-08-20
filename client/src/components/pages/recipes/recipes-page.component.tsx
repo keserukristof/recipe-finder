@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import { RecipesList } from "../RecipieList/recipie-list.component";
+import { RecipesList } from "./recipie-list.component";
 
 
 export const RecipesPage: FunctionComponent = () => {

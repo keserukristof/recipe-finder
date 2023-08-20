@@ -2,12 +2,12 @@ import { FunctionComponent, useState } from "react";
 import { Button, Grid } from '@mui/material';
 import { useDispatch } from 'react-redux';
 
-import StyledCenteredGridContainer from "../../../../styled-components/styled-grid.component";
+import StyledCenteredGridContainer from "../../../styled-components/styled-grid.component";
 
-import { Ingredient } from "../../../../types/ingredients.type";
-import { AutocompleteSearch } from "../../../AutocompleteSearch/autocomplete-search.component";
-import { useGetIngredientsQuery } from "../../../../features/api/api.slice";
-import { addIngredient } from "../../../../features/ingredients/ingreditents.slice";
+import { Ingredient } from "../../../types/ingredients.type";
+import { AutocompleteSearch } from "../../autocomplete-search.component";
+import { useGetIngredientsQuery } from "../../../features/api/api.slice";
+import { addIngredient } from "../../../features/ingredients/ingreditents.slice";
 
 export const SelectIngredientListGroup: FunctionComponent = () => {
     const dispatch = useDispatch();

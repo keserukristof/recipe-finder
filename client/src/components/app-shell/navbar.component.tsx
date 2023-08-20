@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { AppBar, Box, IconButton, Toolbar, Typography, Button } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
-import { useNavitionContext } from '../../../contexts/navigation.context';
+import { useNavitionContext } from '../../contexts/navigation.context';
 
 export const Navbar: FunctionComponent = () => {
     const { handleDrawerToggle, navItems } = useNavitionContext();

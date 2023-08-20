@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 import { List, ListItem } from "@mui/material";
 
-import { NutritionalValues } from "../../../../types/ingredients.type";
+import { NutritionalValues } from "../../../types/ingredients.type";
 
 
 interface NutritientValueListProps {
