@@ -2,7 +2,7 @@ import { FunctionComponent } from "react";
 
 import { Grid } from "@mui/material";
 
-import { MediaCard } from "../../cards/MediaCard/media-card.component";
+import { MediaCard } from "../../cards/media-card.component";
 import { useGetRecipesQuery } from "../../../features/api/api.slice";
 
 

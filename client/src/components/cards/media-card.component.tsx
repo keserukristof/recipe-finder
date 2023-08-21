@@ -10,7 +10,7 @@ import {
     Divider
 } from '@mui/material';
 
-import foodImage from "../../../static/images/food.jpg"
+import foodImage from "../../static/images/food.jpg";
 
 
 interface MediaCardProps {

@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 
 import { Grid } from "@mui/material";
 
-import { ExpandableCard } from "../../cards/ExpandableCard/expandable-card.component";
+import { ExpandableCard } from "../../cards/expandable-card.component";
 import { NutritientValueList } from "./nutritient-value-list.component";
 import { selectAllIngredients } from "../../../features/ingredients/ingredient.selectors";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

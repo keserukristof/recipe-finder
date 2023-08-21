@@ -3,7 +3,7 @@ import { Card as MuCard, CardContent, Typography, CardActions, Collapse, IconBut
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-import { ExpandMore } from "../../../styled-components/expand-more.component";
+import { ExpandMore } from "../../styled-components/expand-more.component";
 
 
 interface ExpandableCardProps {
