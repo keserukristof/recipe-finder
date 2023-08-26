@@ -370,7 +370,7 @@
                     "amount": "1/4 tsp"
                 }
             ],
-            "preparation_time": 20,
+            "preparationTime": 20,
             "complexity": "Easy"
         },
         {
@@ -406,7 +406,7 @@
                     "amount": "1/4 tsp"
                 }
             ],
-            "preparation_time": 15,
+            "preparationTime": 15,
             "complexity": "Easy"
         },
         {
@@ -440,7 +440,7 @@
                     "amount": "2 3/4 cups"
                 }
             ],
-            "preparation_time": 25,
+            "preparationTime": 25,
             "complexity": "Medium"
         },
         {
@@ -478,7 +478,7 @@
                     "amount": "1/2 tsp"
                 }
             ],
-            "preparation_time": 30,
+            "preparationTime": 30,
             "complexity": "Medium"
         },
         {
@@ -512,7 +512,7 @@
                     "amount": "1/4 tsp"
                 }
             ],
-            "preparation_time": 10,
+            "preparationTime": 10,
             "complexity": "Easy"
         }
     ]
