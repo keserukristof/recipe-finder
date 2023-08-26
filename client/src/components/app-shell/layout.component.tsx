@@ -5,7 +5,7 @@ import { Box, Toolbar, CssBaseline, Container } from "@mui/material";
 
 import { Navbar } from "./navbar.component";
 import { DrawerContainer } from "./Drawer/drawer-container.component";
-import { Recipe } from "../pages/recipes/recipe.component";
+import { RecipePage } from "../pages/recipe/recipe-page.component";
 import { HomePage } from "../pages/home/home-page.component";
 import { AboutPage } from "../pages/about/about-page.component";
 import { RecipesPage } from "../pages/recipes/recipes-page.component"
@@ -28,7 +28,7 @@ export const Layout: FunctionComponent = () => {
                         <Route path="/" element={<HomePage />} />
                         <Route path="/about" element={<AboutPage />} />
                         <Route path="/recipes" element={<RecipesPage />} />
-                        <Route path="/recipes/:id" element={<Recipe />} />
+                        <Route path="/recipes/:id" element={<RecipePage />} />
                     </Routes>
                 </Container>
             </Box>
