@@ -5,6 +5,7 @@ import { AppBar, Box, IconButton, Toolbar, Typography, Button } from '@mui/mater
 import MenuIcon from '@mui/icons-material/Menu';
 
 import { useNavitionContext } from '../../contexts/navigation.context';
+import { Paths } from '../../constants/navigation.constants';
 
 export const Navbar: FunctionComponent = () => {
     const { handleDrawerToggle, navItems } = useNavitionContext();
@@ -26,7 +27,9 @@ export const Navbar: FunctionComponent = () => {
                     component="div"
                     sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
                 >
-                    Recipe Finder
+                    <Link to={Paths.HOME}>
+                        Recipe Finder
+                    </Link>
                 </Typography>
                 <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                     {navItems.map((item) => (
