@@ -1,20 +1,23 @@
 import { FunctionComponent, useState } from "react";
-import { Card as MuCard, CardContent, Typography, CardActions, Collapse, IconButton } from '@mui/material';
+import { Card as MuCard, CardContent, Typography, CardActions, Collapse, IconButton, Grid } from '@mui/material';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ClearIcon from '@mui/icons-material/Clear';
 
 import { ExpandMore } from "../../styled-components/expand-more.component";
 
 
 interface ExpandableCardProps {
+    id: number;
     title: string;
     expandedContent: JSX.Element;
     minWidth: string;
     isIcon?: boolean;
     icon?: JSX.Element;
+    handleXClick: (id: number) => void;
 }
 
-export const ExpandableCard: FunctionComponent<ExpandableCardProps> = ({ title, expandedContent, isIcon, icon, minWidth }) => {
+export const ExpandableCard: FunctionComponent<ExpandableCardProps> = ({ id, title, expandedContent, isIcon, icon, handleXClick}) => {
     const [expanded, setExpanded] = useState(false);
 
     const handleExpandClick = () => {
@@ -22,11 +25,23 @@ export const ExpandableCard: FunctionComponent<ExpandableCardProps> = ({ title, 
     };
 
     return (
-        <MuCard sx={{display: 'inline-flex', flexDirection: 'column', alignItems: 'flex-start', minWidth: '170px'}}>
-            <CardContent>
-                <Typography variant="h5" component="div">
-                    {title} {isIcon ? icon : ''}
-                </Typography>
+        <MuCard sx={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'flex-start', minWidth: '170px' }}>
+            <CardContent sx={{ width: '100%' }}>
+                <Grid container
+                    direction="row"
+                    justifyContent="space-between"
+                    alignItems="center">
+                    <Grid item>
+                        <Typography variant="h5" component="div">
+                            {title} {isIcon ? icon : ''}
+                        </Typography>
+                    </Grid>
+                    <Grid item>
+                        <IconButton aria-label="add to favorites">
+                            <ClearIcon onClick={() => handleXClick(id)}/>
+                        </IconButton>
+                    </Grid>
+                </Grid>
             </CardContent>
             <CardActions disableSpacing>
                 <IconButton aria-label="add to favorites">
