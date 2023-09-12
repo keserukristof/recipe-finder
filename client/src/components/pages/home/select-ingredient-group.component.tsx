@@ -1,6 +1,6 @@
 import { FunctionComponent, useState } from "react";
 import { Button, Grid } from '@mui/material';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 import StyledCenteredGridContainer from "../../../styled-components/styled-grid.component";
 
@@ -8,10 +8,12 @@ import { Ingredient } from "../../../types/ingredients.type";
 import { AutocompleteSearch } from "../../autocomplete-search.component";
 import { useGetIngredientsQuery } from "../../../features/api/api.slice";
 import { addIngredient } from "../../../features/ingredients/ingreditents.slice";
+import { selectAllIngredients } from "../../../features/ingredients/ingredient.selectors";
 
 export const SelectIngredientListGroup: FunctionComponent = () => {
     const dispatch = useDispatch();
     const { data: ingredients, isError, error } = useGetIngredientsQuery();
+    const ingredientsFromState = useSelector(selectAllIngredients);
 
     const [inputValue, setInputValue] = useState<string>("");
     const [selectedValue, setSelectedValue] = useState<string | null>(null);
@@ -62,6 +64,9 @@ export const SelectIngredientListGroup: FunctionComponent = () => {
             <Grid item sx={{ p: 3 }}>
                 <Button variant="outlined" onClick={handleSubmit}>Submit</Button>
             </Grid>
+            {ingredientsFromState.length ? <Grid item sx={{ p: 3 }}>
+                <Button variant="outlined" onClick={handleSubmit}>Search Recipe</Button>
+            </Grid> : ""}
         </StyledCenteredGridContainer>
     );
 };
