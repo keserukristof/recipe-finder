@@ -14,10 +14,10 @@ interface ExpandableCardProps {
     minWidth: string;
     isIcon?: boolean;
     icon?: JSX.Element;
-    handleXClick: (id: number) => void;
+    handleRemoveClick: (id: number) => void;
 }
 
-export const ExpandableCard: FunctionComponent<ExpandableCardProps> = ({ id, title, expandedContent, isIcon, icon, handleXClick}) => {
+export const ExpandableCard: FunctionComponent<ExpandableCardProps> = ({ id, title, expandedContent, isIcon, icon, handleRemoveClick}) => {
     const [expanded, setExpanded] = useState(false);
 
     const handleExpandClick = () => {
@@ -28,7 +28,6 @@ export const ExpandableCard: FunctionComponent<ExpandableCardProps> = ({ id, tit
         <MuCard sx={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'flex-start', minWidth: '170px' }}>
             <CardContent sx={{ width: '100%' }}>
                 <Grid container
-                    direction="row"
                     justifyContent="space-between"
                     alignItems="center">
                     <Grid item>
@@ -37,8 +36,8 @@ export const ExpandableCard: FunctionComponent<ExpandableCardProps> = ({ id, tit
                         </Typography>
                     </Grid>
                     <Grid item>
-                        <IconButton aria-label="add to favorites">
-                            <ClearIcon onClick={() => handleXClick(id)}/>
+                        <IconButton aria-label="remove ingredient">
+                            <ClearIcon onClick={() => handleRemoveClick(id)}/>
                         </IconButton>
                     </Grid>
                 </Grid>

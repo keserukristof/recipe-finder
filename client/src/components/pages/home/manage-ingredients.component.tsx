@@ -2,9 +2,9 @@ import { FunctionComponent } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 import { Grid } from "@mui/material";
-import { faLeaf } from "@fortawesome/free-solid-svg-icons";
 
 import { ExpandableCard } from "../../cards/expandable-card.component";
+import { faLeaf } from "@fortawesome/free-solid-svg-icons";
 import { NutritientValueList } from "./nutritient-value-list.component";
 import { selectAllIngredients } from "../../../features/ingredients/ingredient.selectors";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -32,7 +32,7 @@ export const ManageIngredients: FunctionComponent = () => {
                             minWidth="200px"
                             icon={<FontAwesomeIcon icon={faLeaf} />}
                             expandedContent={<NutritientValueList nutritionalValues={nutritionalValues} />}
-                            handleXClick={handleRemoveIngredient}
+                            handleRemoveClick ={handleRemoveIngredient}
                         />
                     </Grid>
                 );
