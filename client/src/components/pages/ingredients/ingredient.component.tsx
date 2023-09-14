@@ -10,8 +10,8 @@ export const Ingredient: FunctionComponent<IngredientProps> = ({ id }) => {
     const { name, error } = useIngredientName(id);
     
     if (error) {
-        return <p>{error}</p>;
+        return <div>{error}</div>;
     }
 
-    return <p>{name}</p>;
+    return <div>{name}</div>;
 };
