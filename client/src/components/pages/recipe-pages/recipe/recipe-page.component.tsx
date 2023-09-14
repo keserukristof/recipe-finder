@@ -2,8 +2,8 @@ import { FunctionComponent } from "react";
 import { useParams } from "react-router-dom";
 import { List, ListItem } from "@mui/material";
 
-import { useGetRecipeByIdQuery } from "../../../features/api/api.slice";
-import { Ingredient } from "../ingredients/ingredient.component";
+import { useGetRecipeByIdQuery } from "../../../../features/api/api.slice";
+import { Ingredient } from "../../ingredients/ingredient.component";
 
 export const RecipePage: FunctionComponent = () => {
     const { id } = useParams<{ id: string }>();

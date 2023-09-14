@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 import { Divider, Grid } from "@mui/material";
 import { AccessTime, Speed } from '@mui/icons-material';
-import StyledRecipeAdditionalInformationBox from "../../../styled-components/recipe-additional-information-box.component";
+import StyledRecipeAdditionalInformationBox from "../../../../styled-components/recipe-additional-information-box.component";
 
 
 interface MediaCardAdditionalSectionProps {

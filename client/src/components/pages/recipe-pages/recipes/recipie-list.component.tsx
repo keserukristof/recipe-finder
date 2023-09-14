@@ -2,8 +2,8 @@ import { FunctionComponent } from "react";
 
 import { Grid } from "@mui/material";
 
-import { MediaCard } from "../../cards/media-card.component";
-import { useGetRecipesQuery } from "../../../features/api/api.slice";
+import { MediaCard } from "../../../cards/media-card.component";
+import { useGetRecipesQuery } from "../../../../features/api/api.slice";
 import { MediaCardAdditionalSection } from "./media-card-additional-section";
 import { MediaCardActionButtons } from "./media-card-action-buttons.component";
 
