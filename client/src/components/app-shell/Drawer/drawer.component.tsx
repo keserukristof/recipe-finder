@@ -17,9 +17,9 @@ export const Drawer: FunctionComponent = () => {
             </Typography>
             <Divider />
             <List>
-                {navItems.map((item) => (
-                    <Link to={item.path}>
-                        <ListItem key={item.name} disablePadding>
+                {navItems.map((item, key) => (
+                    <Link to={item.path} key={key}>
+                        <ListItem disablePadding>
                             <ListItemButton sx={{ textAlign: 'center' }}>
                                 <ListItemText primary={item.name} />
                             </ListItemButton>

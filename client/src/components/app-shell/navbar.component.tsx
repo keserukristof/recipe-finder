@@ -32,8 +32,8 @@ export const Navbar: FunctionComponent = () => {
                     </Link>
                 </Typography>
                 <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-                    {navItems.map((item) => (
-                        <Link to={item.path}>
+                    {navItems.map((item, key) => (
+                        <Link to={item.path} key={key}>
                             <Button key={item.name} sx={{ color: '#fff' }}>
                                 {item.name}
                             </Button>
