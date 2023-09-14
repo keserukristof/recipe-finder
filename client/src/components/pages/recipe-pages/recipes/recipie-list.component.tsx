@@ -2,10 +2,8 @@ import { FunctionComponent } from "react";
 
 import { Grid } from "@mui/material";
 
-import { MediaCard } from "../../../cards/media-card.component";
 import { useGetRecipesQuery } from "../../../../features/api/api.slice";
-import { MediaCardAdditionalSection } from "./media-card-additional-section";
-import { MediaCardActionButtons } from "./media-card-action-buttons.component";
+import RecipeCard from "../recipe-card.component";
 
 
 export const RecipesList: FunctionComponent = () => {
@@ -13,15 +11,16 @@ export const RecipesList: FunctionComponent = () => {
 
     return (
         <Grid container spacing={2} justifyContent="space-evenly">
-            {recipes?.map(recipe => {
-                const { id, name, description, complexity, preparationTime } = recipe;
-                return (<Grid item>
-                    <MediaCard title={name} description={description} >
-                        <MediaCardAdditionalSection complexity={complexity} preparationTime={preparationTime} />
-                        <MediaCardActionButtons id={id} linkPath="recipes" buttonLabel="Learn More" />
-                    </MediaCard>
-                </Grid>);
-            })}
+            {recipes?.map(recipe => 
+                <RecipeCard 
+                    key={recipe.id}
+                    id={recipe.id}
+                    name={recipe.name}
+                    description={recipe.description}
+                    complexity={recipe.complexity}
+                    preparationTime={recipe.preparationTime}
+                />
+            )}
         </Grid>
     );
 }
