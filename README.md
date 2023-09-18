@@ -1,5 +1,7 @@
 # 🍽 Recipe Finder
 
+⚠️ **Disclaimer**: This application is currently under development. Features and functionality may change or be unstable.
+
 Discover recipes based on the ingredients you have at hand. The Recipe Finder aims to help food enthusiasts and chefs quickly find recipes that match their available ingredients and explore new culinary delights.
 
 ## 🚀 Getting Started
