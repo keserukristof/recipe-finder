@@ -22,9 +22,12 @@ const ingredientsSlice = createSlice({
                 state[index] = action.payload;
             }
         },
+        removeAllIngredients: () => {
+            return [];
+        }
     }
 });
 
-export const { addIngredient, removeIngredient, updateIngredient } = ingredientsSlice.actions;
+export const { addIngredient, removeIngredient, updateIngredient, removeAllIngredients } = ingredientsSlice.actions;
 
 export default ingredientsSlice.reducer;

@@ -7,7 +7,7 @@ import StyledCenteredGridContainer from "../../../styled-components/styled-grid.
 import { Ingredient } from "../../../types/ingredients.type";
 import { AutocompleteSearch } from "../../autocomplete-search.component";
 import { useGetIngredientsQuery } from "../../../features/api/api.slice";
-import { addIngredient } from "../../../features/ingredients/ingreditents.slice";
+import { addIngredient, removeAllIngredients } from "../../../features/ingredients/ingreditents.slice";
 import { selectAllIngredients } from "../../../features/ingredients/ingredient.selectors";
 
 export const SelectIngredientListGroup: FunctionComponent = () => {
@@ -53,6 +53,10 @@ export const SelectIngredientListGroup: FunctionComponent = () => {
         navigate(`/recipe-search-results?ingredients=${ingredientIds.join("-")}`);
     }
 
+    const handleRemoveAllIngredients = () => {
+        dispatch(removeAllIngredients());
+    }
+
     if (isError && error) {
         return <p>Error: {JSON.stringify(error)}</p>;
     }
@@ -72,9 +76,14 @@ export const SelectIngredientListGroup: FunctionComponent = () => {
             <Grid item sx={{ p: 3 }}>
                 <Button variant="outlined" onClick={handleAddIngredient} sx={{ minWidth: 100 }}>Add</Button>
             </Grid>
-            {ingredientsFromState.length ? <Grid item sx={{ p: 3 }}>
-                <Button variant="outlined" onClick={handleSubmitRecipeSearch}>Search Recipe</Button>
-            </Grid> : ""}
+            {ingredientsFromState.length ? <>
+                <Grid item sx={{ p: 3 }}>
+                    <Button variant="outlined" onClick={handleSubmitRecipeSearch}>Search Recipe</Button>
+                </Grid>
+                <Grid item sx={{ p: 3 }}>
+                    <Button variant="outlined" onClick={handleRemoveAllIngredients}>Remove All Ingredients</Button>
+                </Grid>
+            </> : ""}
         </StyledCenteredGridContainer>
     );
 };

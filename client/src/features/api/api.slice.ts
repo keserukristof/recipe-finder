@@ -4,7 +4,7 @@ import { Ingredient } from "../../types/ingredients.type";
 import { Recipe } from "../../types/recipe.type"
 import { SERVER_BASE_URL } from "../../constants/api.constants"
 
-export const api  = createApi({
+export const api = createApi({
     reducerPath: 'api',
     baseQuery: fetchBaseQuery({ baseUrl: SERVER_BASE_URL }),
     endpoints: (builder) => ({
